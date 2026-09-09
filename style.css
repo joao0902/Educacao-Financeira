@@ -1,0 +1,391 @@
+:root{
+    --paper:#F1EEE3;
+    --ink:#1C2E2A;
+    --navy:#1B3A4B;
+    --gold:#C79A2E;
+    --sage:#6F8A6E;
+    --line: rgba(28,46,42,0.15);
+    --serif: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    --sans: 'Helvetica Neue', Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+
+   p{
+    font-size:16px;
+    line-height:1.8;
+    color:#33403c;
+    margin:0 0 20px;
+    text-align: justify;
+  }
+
+  /* ---------- HEADER / MENU ---------- */
+
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:22px 48px;
+    border-bottom:1px solid var(--line);
+    background:#F1EEE3;
+    position:relative;
+    top:0;
+    z-index:10;
+  }
+
+  .logo-img{
+    width: 120px;
+    height: 110px;
+    background-color: #F1EEE3;
+    
+  }
+  .brand{
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    display:flex;
+    align-items: center;
+    gap:8px;
+    color: #1B3A4B;
+  }
+  .brand .mark{ color:var(--gold); font-size:20px; }
+  nav ul{
+    list-style:none;
+    display:flex;
+    gap:34px;
+    margin:0;
+    padding:0;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+  }
+  nav a{
+    padding-bottom:4px;
+    border-bottom:2px solid transparent;
+    transition:border-color .2s ease;
+  }
+  nav a:hover, nav a.active{ border-color:var(--gold); }
+
+
+    /* ---------- AREA DA ACESSIBILIDADE ---------- */
+
+  #acessibilidade{
+    border: 1px solid #1B3A4B;
+    height: 40px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  #btn-escuro{
+    background-color: #1B3A4B;
+    color: #fff;
+    margin: 7px;
+    height: 25px;
+  }
+
+
+  /*QUANDO O MODO ESCURO FOR ATIVADO*/
+  body.modo-escuro { 
+    background-color: #121212;
+    color: #fff;
+    transition: 0.1S;
+    }
+
+  body.modo-escuro header{
+    background-color: #121212;
+    color: #fff;
+  }
+
+  body.modo-escuro .logo-img{
+    background-color: #121212;
+  }
+
+  /* ---------- CONTEUDO DE APRESENTAÇÃO ---------- */
+  .conteudo1{
+    padding:96px 48px 80px;
+    max-width:1100px;
+    margin:0 auto;
+    position:relative;
+    text-align: center;
+    border: 2px solid blue; 
+  }
+  .apresentacao{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.18em;
+    color:#6F8A6E;
+    margin-bottom:18px;
+    font-weight:600;
+  }
+  .conteudo1 h1{
+    font-family:var(--serif);
+    font-size:56px;
+    line-height:1.08;
+    width:820px;
+    margin:0 0 30px 70px;
+    color: #1B3A4B;
+  }
+  .conteudo1 h1 em{ font-style:italic; color:var(--gold); }
+  .conteudo1 p.lead{
+    font-size:18px;
+    max-width:560px;
+    line-height:1.6;
+    color:#3c4a46;
+    margin-bottom:36px;
+  }
+  .cta-row{ 
+    display:flex; 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .btn{
+    display:inline-block;
+    padding:13px 28px;
+    background:var(--navy);
+    color:var(--paper);
+    font-size:14px;
+    letter-spacing:0.03em;
+    border-radius:2px;
+  }
+  .btn:hover{
+    background:var(--paper);
+    color: var(--navy);
+    border: 1px solid var(--navy);
+  }
+  .btn.ghost{
+    background:transparent;
+    border:1px solid var(--navy);
+    color:var(--navy);
+  }
+
+  .btn.ghost:hover{
+    background-color: var(--navy);
+    color: var(--paper);
+  }
+/* ---------- O QUE É EDUCAÇÃO FINANCEIRA ---------- */
+#educ-fin{
+  padding:42px 15px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+ .titulo-conteudo{
+    font-family:var(--serif);
+    font-size:32px;
+    color:var(--navy);
+    margin:0 0 25px;
+  }
+  
+
+  /* ----------  IMPORTÂNCIA ---------- */
+  .importancia{
+    padding:0px 15px;
+    max-width:780px;
+    margin:0 auto;
+  }
+  .importancia .titulo-importancia{ 
+    margin-bottom:6px;
+    color: #6F8A6E;
+    font-size: 27px;
+  }
+  .importancia h2{
+    font-family:var(--serif);
+    font-size:32px;
+    color:var(--navy);
+    margin:0 0 26px;
+  }
+  #importancia-topicos{
+    width: 650px;
+  }
+  .topicos{
+    color: #377955;
+  }
+
+.tp{
+  display: flex;
+  align-items: center;
+}
+.tp img{
+  margin-right: 10px;
+}
+#importancia-topicos p{
+  line-height: 1.5em;
+}
+
+ 
+
+ 
+
+  /* ---------- TRILHA (signature element) ---------- */
+  .trilha{
+    padding:0px 48px 100px;
+    max-width:1100px;
+    margin:0 auto;
+    position:relative;
+  }
+  .trilha-title{
+    font-family:var(--serif);
+    font-size:28px;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .trilha-sub{
+    font-size:14px;
+    color:#5a655f;
+    margin-bottom:56px;
+    max-width:480px;
+  }
+  .path{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+  .path::before{
+    content:"";
+    position:absolute;
+    top:11px;
+    left:0;
+    right:0;
+    height:2px;
+    background-image: linear-gradient(to right, var(--sage) 60%, transparent 0%);
+    background-size: 14px 2px;
+    background-repeat: repeat-x;
+  }
+  .stop{
+    position:relative;
+    width:22%;
+    text-align:left;
+  }
+  .stop .dot{
+    width:24px; height:24px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--sage);
+    margin-bottom:20px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;
+    color:var(--sage);
+    font-weight:700;
+  }
+  .stop.filled .dot{ background:var(--sage); color:var(--paper); }
+  .stop h3{
+    font-family:var(--serif);
+    font-size:17px;
+    margin:0 0 8px;
+    color:var(--navy);
+  }
+  .stop p{
+    font-size:13px;
+    line-height:1.55;
+    color:#4d5852;
+    margin:0;
+  }
+
+  /* ---------- DIAGNÓSTICO / DADOS ---------- */
+  .diagnostico{
+    background:var(--navy);
+    color:var(--paper);
+    padding:80px 48px;
+  }
+  .diagnostico-inner{ max-width:1100px; margin:0 auto; }
+  .diagnostico h2{
+    font-family:var(--serif);
+    font-size:30px;
+    margin:0 0 46px;
+    max-width:560px;
+  }
+  .stats{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+  }
+  .stat{ flex:1; min-width:190px; }
+  .stat .num{
+    font-family:var(--serif);
+    font-size:44px;
+    color:var(--gold);
+    line-height:1;
+    margin-bottom:10px;
+  }
+  .stat .label{
+    font-size:13px;
+    line-height:1.5;
+    color:#c9d3cf;
+  }
+
+  /* ---------- ARTIGO / IMPORTÂNCIA ---------- */
+  .artigo{
+    padding:90px 48px;
+    max-width:780px;
+    margin:0 auto;
+  }
+  .artigo .eyebrow{ margin-bottom:14px; }
+  .artigo h2{
+    font-family:var(--serif);
+    font-size:32px;
+    color:var(--navy);
+    margin:0 0 26px;
+  }
+  .artigo p{
+    font-size:16px;
+    line-height:1.8;
+    color:#33403c;
+    margin:0 0 20px;
+  }
+  .pullquote{
+    border-left:3px solid var(--gold);
+    padding-left:22px;
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:20px;
+    color:var(--navy);
+    margin:36px 0;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:40px 48px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:12px;
+    color:#5a655f;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  footer .cols{ display:flex; gap:60px; flex-wrap:wrap; }
+  footer .col h4{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--navy);
+    margin:0 0 10px;
+  }
+  footer .col a{ display:block; margin-bottom:6px; color:#5a655f; }
+
+  @media (max-width: 720px){
+    header{padding:16px 20px; flex-direction:column; gap:14px;}
+    nav ul{gap:16px; flex-wrap:wrap; justify-content:center;}
+    .conteudo1{padding:56px 20px;}
+    .conteudo1 h1{font-size:34px;}
+    .path{flex-direction:column; gap:28px;}
+    .path::before{display:none;}
+    .stop{width:100%;}
+    .stats{flex-direction:column;}
+    .diagnostico, .artigo, .trilha{padding:56px 20px;}
+    footer{flex-direction:column; align-items:flex-start;}
+  }
